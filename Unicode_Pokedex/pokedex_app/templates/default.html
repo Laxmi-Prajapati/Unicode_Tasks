@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Pokedex</title>
+</head>
+<body>
+    <h1>Welcome to My Pokedex!</h1>
+    <p>This is the default view. Click the button below to go to the Pokedex.</p>
+    <a href="{% url 'pokemon_types_view' %}">View each Type</a>
+    <a href="{% url 'pokemon_by_type' %}">View Pokemon by Type</a>
+    <a href="{% url 'pokemon_search' %}">Search a Pokemon</a>
+    <a href="{% url 'caught_pokemon_list' %}">See caught pokemon</a>
+</body>
+</html>

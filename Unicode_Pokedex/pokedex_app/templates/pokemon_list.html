@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon List</title>
+    </head>
+    <body>
+        <h1>Pokemon List for Selected Type</h1>
+
+        <ul>
+            {% for pokemon in pokemons %}
+                <li><a href='https://pokeapi.co/api/v2/pokemon/{{pokemon.lower}}'>{{pokemon}} </a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

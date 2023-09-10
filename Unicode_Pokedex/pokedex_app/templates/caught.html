@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Caught Pokemon</title>
+    </head>
+        <h1>Your Caught Pokemon</h1>
+
+        <ul>
+            {% for pokemon in caught_pokemon %}
+            <li>{{ pokemon.name }} Level {{ pokemon.level }} Height {{pokemon.height}} Moves {{pokemon.moves}} <img src="{{ pokemon.sprites }}" alt="{{ pokemon.name }} Image"></li>
+            {% endfor %}
+        </ul>
+    <body>
+
+    </body>
+</html>

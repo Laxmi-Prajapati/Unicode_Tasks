@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Type Selection</title>
+    </head>
+
+    <body>
+        <h1>Select a Pokemon Type</h1>
+        <form method = "post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+        {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% endif %}
+    </body>
+</html>
