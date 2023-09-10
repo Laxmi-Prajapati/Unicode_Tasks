@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.book{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.title{
+    color: #ffffff;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: none;
+    padding: 10px;
+}
+
+.major{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image{
+    max-width: 300px;
+}
+
